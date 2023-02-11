@@ -1,0 +1,12 @@
+<%- include("partial/header") -%>
+<h1>Home</h1>
+<p> <%=startingContent%> </p>
+<% console.log(posts) %>
+<% posts.forEach(function(compose){ %>
+    <h1> <%= post.title %> </h1>
+    <p> <%= post.content %> </p>
+<% }); %>
+
+
+
+<%- include("partial/footer") -%>
